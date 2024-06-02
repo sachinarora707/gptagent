@@ -22,6 +22,9 @@
 1. Install Cassandra. 
 
     Using Docker (recommended):
+   ```
+    docker network create cass-network
+   ```
     ```
     docker run --name cass --network cass-network -d -e CASSANDRA_BROADCAST_ADDRESS=127.0.0.1 -p 9042:9042 cassandra:latest
     ```
