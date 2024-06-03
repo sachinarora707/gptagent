@@ -70,7 +70,7 @@ When creating a new or making changes to an existing RDB model, you would need t
 
     Option 1: Automatically create new revisions.
     ```
-    alembic revision -- autogenerate -m "COMMIT MESSAGE"
+    alembic revision --autogenerate -m "COMMIT MESSAGE"
     ```
 
     Option 2: Write a custom migrations (manually edit `upgrade()` and `downgrade()`)
